@@ -18,15 +18,28 @@ Use console.log() to clearly show the before-and-after type conversions.
 
 */
 
+// Part 1 Debugging Challenge
 
-let result = "5" - 2;
+let result = "5" - 2; // Implicit type conversion
 console.log("The result is: " + result);
 
-let isValid = Boolean("false");
+let isValid = Boolean("false"); 
 if (isValid) {
     console.log("This is valid!");
 }
 
-let age = "25";
+let age = Number("25"); // Used the Number() explicit type conversion methods to convert "25" into 25
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
+
+// Part 2 Write Your Own Examples
+
+// Example of Implicit type conversion
+let result2 = "5" + 3; 
+console.log(result2);
+
+// Example of Explicit type conversion
+let value = undefined;  
+console.log(value); // Before Explicit type conversion
+let num = Number(value); // After Explicit type conversion
+console.log(num);
